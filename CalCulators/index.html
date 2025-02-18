@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="bi">
+        <div class="box">
+            <textarea id="display" readonly></textarea>
+            <div class="row1">
+                <input value="1" type="button">
+                <input value="2" type="button">
+                <input value="3" type="button">
+                <input value="+" type="button">
+            </div>
+            <div class="row2">
+                <input value="4" type="button">
+                <input value="5" type="button">
+                <input value="6" type="button">
+                <input value="-" type="button">
+            </div>
+            <div class="row3">
+                <input value="7" type="button">
+                <input value="8" type="button">
+                <input value="9" type="button">
+                <input value="x" type="button">
+            </div>
+            <div class="row4">
+                <input value="0" type="button">
+                <input value="/" type="button">
+                <input value="=" type="button">
+                <input value="clr" type="button">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const display = document.querySelector("#display");
+            const buttons = document.querySelectorAll("input[type='button']");
+            
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const value = button.value;
+                    
+                    if (value === "=") {
+                        try {
+                            display.value = eval(display.value.replace("x", "*"));
+                        } catch {
+                            display.value = "Error";
+                        }
+                    } else if (value === "clr") {
+                        display.value = "";
+                    } else {
+                        display.value += value === "x" ? "*" : value;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
