@@ -1,4 +1,4 @@
-function validateForm(){
+function  validateForm(){
 
     let name = document.getElementById("name").value;
     let mob = document.getElementById("mobile").value;
