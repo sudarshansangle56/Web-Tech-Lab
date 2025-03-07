@@ -1,0 +1,23 @@
+.o{
+   background-color: rgb(81, 200, 91);
+   height: 21px;
+   width: 70px;
+
+   color: white;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-items: center;
+   padding: 10px;
+   margin-top: 10px;
+}
+.o a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+h1{
+    color: #2838e9c0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -14,7 +14,7 @@
     width: 420px;
     height: 400px;
     border-radius: 20px;
-    background-color: rgba(61, 169, 61, 0.363);
+    background-color: rgba(61, 90, 169, 0.532);
     gap: 15px;
 }
 .ok input{
@@ -30,4 +30,5 @@
     border-radius: 7px;
     border: 1px solid white;
      cursor: pointer;
+     background: #ffffff;
 }
