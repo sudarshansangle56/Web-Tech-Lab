@@ -1,7 +1,7 @@
 <web-app> 
 <servlet>  
 
-<servlet-name>yogesh</servlet-name>  
+<servlet-name>Sudarshan</servlet-name>  
 <servlet-class>DemoServlet</servlet-class>  
 </servlet>  
 
